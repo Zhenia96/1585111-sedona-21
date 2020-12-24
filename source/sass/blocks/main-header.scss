@@ -1,0 +1,18 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__box {
+  overflow: hidden;
+}
+
+.main-header__image {
+  display: block;
+  // Скрывает картинку равномерно со всех сторон
+  transform: translateX(calc((100% - 100vw) / 2 * (-1)));
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(calc((100% - 100vw) / 2 * (-1) - 15px));
+  }
+}

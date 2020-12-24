@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-  </body>
+<body class="page__body">
+
+  <header class="main-header">
+
+    <nav class="main-navigation main-header__navigation">
+      <a class="main-navigation__logo"><img class="main-navigation__image" src="https://via.placeholder.com/102x84"
+          width="102" height="84" alt="Логотип 'Седона'"></a>
+      <ul class="main-navigation__list site-menu">
+        <li class="site-menu__item"><a class="site-menu__link" href="">Главная</a></li>
+        <li class="site-menu__item"><a class="site-menu__link" href="">Фото и видео</a></li>
+        <li class="site-menu__item"><a class="site-menu__link" href="">Форма отзыва</a></li>
+        <li class="site-menu__item"><a class="site-menu__link" href="" lang="en">HTML Academy</a></li>
+      </ul>
+      <button class="main-navigation__button main-navigation__button--open"></button>
+    </nav>
+
+    <div class="main-header__box">
+      <img class="main-header__image" src="https://via.placeholder.com/901x389" alt="Горы на которых растут деревья">
+    </div>
+
+  </header>
+
+  <main>
+    <h1 class="main-title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h1>
+
+    <section class="reasons">
+      <h2 class="reasons__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+      <ul class="reasons__list">
+        <li class="reasons__item reasons__item--subgrid reasons__item--grid-element-1">
+          <div class="reasons__container reasons__container--special reasons__container--column-1">
+            <h3 class="reasons__subtitle">Настоящий городок</h3>
+            <div class="reasons__number">&ndash; №1 &ndash;</div>
+            <p class="reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="reasons__box reasons__box--column-1">
+            <img class="reasons__picture" src="https://via.placeholder.com/520x260"
+              alt="Двухэтажные домики на фоне природы">
+          </div>
+          <ul class="reasons__conditions reasons__conditions--row conditions">
+            <li class="conditions__item conditions__item--house">
+              <h4 class="conditions__subtitle">Жилье</h4>
+              <p class="conditions__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="conditions__item conditions__item--souvenirs">
+              <h4 class="conditions__subtitle">Сувениры</h4>
+              <p class="conditions__text">Не только китайского,<br> но и местного производства!</p>
+            </li>
+            <li class="conditions__item conditions__item--food">
+              <h4 class="conditions__subtitle">Еда</h4>
+              <p class="conditions__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="reasons__item reasons__item--subgrid reasons__item--grid-element-2">
+          <div class="reasons__container reasons__container--column-2">
+            <h3 class="reasons__subtitle">Там есть Мост дьявола</h3>
+            <div class="reasons__number">&ndash; №2 &ndash;</div>
+            <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <div class="reasons__box reasons__box--column-2">
+            <img class="reasons__picture" src="https://via.placeholder.com/520x260"
+              alt="Каменный мост на фоне леса и скал">
+          </div>
+        </li>
+
+        <li class="reasons__item reasons__item--type-2">
+          <div class="reasons__container reasons__container--type-2">
+            <h3 class="reasons__subtitle">Небольшая площадь</h3>
+            <div class="reasons__number">&ndash; №3 &ndash;</div>
+            <p class="reasons__text">Все интересные места находятся очень близко</p>
+          </div>
+        </li>
+
+        <li class="reasons__item reasons__item--type-2">
+          <div class="reasons__container reasons__container--type-2">
+            <h3 class="reasons__subtitle">Красивая дорога</h3>
+            <div class="reasons__number">&ndash; №4 &ndash;</div>
+            <p class="reasons__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </li>
+
+        <li class="reasons__item reasons__item--type-2">
+          <div class="reasons__container reasons__container--type-2">
+            <h3 class="reasons__subtitle">Мало туристов</h3>
+            <div class="reasons__number">&ndash; №5 &ndash;</div>
+            <p class="reasons__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="search">
+      <h2 class="visually-hidden">Поиск гостиниц</h2>
+      <div class="search__container">
+        <p class="search__text search__text--large">Заинтересовались?</p>
+        <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
+          седоне</p>
+        <a class="search__link" href="#">Найти гостиницу</a>
+      </div>
+      <img class="search__map" src="https://via.placeholder.com/320x350" alt="Карта с адресом гостиницы">
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <a class="main-footer__tag" lang="en">#visitsedona</a>
+    <ul class="main-footer__social social">
+      <li class="social__item"></li>
+      <li class="social__item"></li>
+      <li class="social__item"></li>
+    </ul>
+    <p class="main-footer__developer">Разработано <a class="main-footer__link"><img class="main-footer__logo"
+          src="https://via.placeholder.com/27x34" alt="Логотип организации HTML Academy"></a></p>
+  </footer>
+
+</body>
+
 </html>

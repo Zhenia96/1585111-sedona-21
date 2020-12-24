@@ -1,0 +1,14 @@
+@mixin text($size, $height, $color, $weight: 400) {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+//ВРЕМЕННО
+@mixin outline($color: rgba(255, 0, 0, 1)) {
+  outline: 2px solid $color;
+  outline-offset: -2px;
+}
