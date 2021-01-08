@@ -1,0 +1,14 @@
+.main-title {
+  text-align: center;
+  text-transform: uppercase;
+
+  @include text(21px, 26px, $black, 700);
+
+  @media (min-width: $tablet-width) {
+     font-size: 30px;
+  }
+
+  &--small {
+    font-size: 18px;
+  }
+}

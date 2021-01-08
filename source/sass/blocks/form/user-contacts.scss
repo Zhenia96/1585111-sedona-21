@@ -1,0 +1,124 @@
+.user-contacts {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 72.5px 0 51.5px 0;
+   }
+}
+
+.user-contacts__field {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  @media (max-width: $mobile-only-width) {
+    margin: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid rgba(219, 219, 219, 1);
+  }
+}
+
+.user-contacts__legend {
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  text-align: center;
+
+  @include text(18px, 26px, $black, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 20.5px;
+    width: 400px;
+   }
+
+   @media (min-width: $desktop-width) {
+    margin-bottom: 71.5px;
+  }
+}
+
+.user-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.user-contacts__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
+
+.user-contacts__label {
+  text-transform: uppercase;
+  margin: 0 0 5px 22px;
+
+  @include text(14px, 26px, rgba(51, 51, 51, 1));
+
+  & sup {
+    vertical-align: top;
+    font-size: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 16px 0 0;
+  }
+}
+
+.user-contacts__temporary {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.user-contacts__wrapper {
+  display: flex;
+  &::after {
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: rgba(230, 230, 230, 1);
+  }
+}
+
+.user-contacts__button {
+  background-color: rgba(242, 242, 242, 1);
+  padding: 18px 22px 14px 22px;
+  border: none;
+  flex-grow: 1;
+
+  @include text(18px, 26px, $black, 700);
+
+  &::placeholder {
+    @include text(18px, 26px, $black, 700);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    outline: 4px solid rgba(229, 229, 229, 1);
+    outline-offset: -4px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 257px;
+    box-sizing: border-box;
+  }
+}

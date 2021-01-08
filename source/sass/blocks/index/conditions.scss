@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 0 60px 0;
+    padding: 60px 0;
   }
 }
 
@@ -22,7 +22,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
   }
 
@@ -43,7 +43,7 @@
     &::before {
       position: static;
       align-self: center;
-      margin: 60px 0 26px 0;
+      margin: 0px 0 26px 0;
     }
   }
 
@@ -55,7 +55,17 @@
     &::before {
       width: 39px;
       height: 37px;
-      background: url("https://via.placeholder.com/39x37") no-repeat;
+      background: url("../img/icon-house.svg") no-repeat;
+      background-size: contain;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        width: 80px;
+        height: 80px;
+        background-position: 50% 100%;
+        background-size: 75px 72px;
+      }
     }
   }
 
@@ -65,12 +75,16 @@
     &::before {
       width: 32px;
       height: 38px;
-      background: url("https://via.placeholder.com/32x38") no-repeat;
+      background: url("../img/icon-gift.svg") no-repeat;
+      background-size: contain;
     }
 
     @media (min-width: $tablet-width) {
       &::before {
-        margin-top: 57px;
+        width: 80px;
+        height: 80px;
+        background-position: 50% 100%;
+        background-size: 64px 75px;
       }
     }
 
@@ -85,12 +99,16 @@
     &::before {
       width: 40px;
       height: 35px;
-      background: url("https://via.placeholder.com/40x35") no-repeat;
+      background: url("../img/icon-burger.svg") no-repeat;
+      background-size: contain;
     }
 
     @media (min-width: $tablet-width) {
       &::before {
-        margin-top: 63px;
+        width: 80px;
+        height: 80px;
+        background-position: 50% 100%;
+        background-size: 76px 68px;
       }
     }
   }

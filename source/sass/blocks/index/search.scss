@@ -47,26 +47,36 @@
 
 .search__link {
   display: block;
-  background-color: rgba(129, 179, 210, 1);
   text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
   width: 100%;
-  padding: 14.5px 0 17.5px 0;
+  padding: 14.5px 10px 17.5px 10px;
+}
 
-  @include text(21px, 26px, $white, 700);
+.search__map {
+  border: none;
+  min-height: 350px;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 
-  &:hover,
-  &:focus {
-    background-color: rgba(102, 158, 192, 1);
+  @media(min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
   }
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(84, 150, 189, 1);
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 
-  &:disabled {
-    background-color: rgba(229, 229, 229, 1);
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page catalog-page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,11 +10,175 @@
 
 <body class="page__body">
 
-  <header></header>
+  <header class="main-header">
 
-  <main></main>
+    <nav class="main-navigation main-header__navigation">
+      <a class="main-navigation__link" href="index.html"><img class="main-navigation__logo" src="img/logotype.svg"
+          width="102" height="84" alt="Логотип 'Седона'"></a>
+      <ul class="main-navigation__list site-menu">
+        <li class="site-menu__item"><a class="site-menu__link" href="index.html">Главная</a></li>
+        <li class="site-menu__item"><a class="site-menu__link" href="#">Фото и видео</a></li>
+        <li class="site-menu__item"><a class="site-menu__link" href="form.html">Форма отзыва</a></li>
+        <li class="site-menu__item"><a class="site-menu__link" href="https://htmlacademy.ru/" lang="en">HTML Academy</a>
+        </li>
+      </ul>
+      <button class="main-navigation__button main-navigation__button--open"></button>
+    </nav>
+    <div class="main-header__promo">
+      <img class="main-header__text" src="img/sedona.svg" alt="Седона">
+    </div>
+  </header>
 
-  <footer></footer>
+  <main class="page__main catalog-page__main">
+    <h1 class="main-title catalog-page__title">Фото и видео</h1>
+    <section class="photo">
+      <h2 class="visually-hidden">Фотографии</h2>
+      <p class="photo__text">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике
+        и экономике.</p>
+      <ul class="photo__list">
+        <li class="photo__item photo__item--main">
+          <div class="photo__content">
+            <a class="photo__container photo__container--row-1" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/content/webp/photo-1-desktop.webp 1x, img/content/webp/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/webp/photo-1-tablet.webp 1x, img/content/webp/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/webp/photo-1-mobile.webp 1x, img/content/webp/photo-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/jpeg/photo-1-desktop.jpg 1x, img/content/jpeg/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/jpeg/photo-1-tablet.jpg 1x, img/content/jpeg/photo-1-tablet@2x.jpg 2x">
+                <img class="photo__picture photo__picture--main" src="img/content/jpeg/photo-1-mobile.jpg"
+                  srcset="img/content/jpeg/photo-1-mobile@2x.jpg 2x" alt="Дорога на фоне заката">
+              </picture>
+            </a>
+            <div class="photo__container photo__container--row-2">
+              <div class="photo__box">
+                <h3 class="photo__name">Неродные просторы</h3>
+                <p class="photo__author">Автор фото: Борис</p>
+              </div>
+              <button class="photo__button">1350</button>
+            </div>
+          </div>
+        </li>
+        <li class="photo__item">
+          <div class="photo__content">
+            <a class="photo__container photo__container--row-1" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/content/webp/photo-2-desktop.webp 1x, img/content/webp/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/webp/photo-2-tablet.webp 1x, img/content/webp/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/webp/photo-2-mobile.webp 1x, img/content/webp/photo-2-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/jpeg/photo-2-desktop.jpg 1x, img/content/jpeg/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/jpeg/photo-2-tablet.jpg 1x, img/content/jpeg/photo-2-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/jpeg/photo-2-mobile.jpg"
+                  srcset="img/content/jpeg/photo-2-mobile@2x.jpg 2x" alt="Кактус с цветками на фоне скал">
+              </picture>
+            </a>
+            <div class="photo__container photo__container--row-2">
+              <div class="photo__box">
+                <h3 class="photo__name">Местная растительность</h3>
+                <p class="photo__author">Автор фото: Сергей</p>
+              </div>
+              <button class="photo__button">143</button>
+            </div>
+          </div>
+        </li>
+        <li class="photo__item">
+          <div class="photo__content">
+            <a class="photo__container photo__container--row-1" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/content/webp/photo-3-desktop.webp 1x, img/content/webp/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/webp/photo-3-tablet.webp 1x, img/content/webp/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/webp/photo-3-mobile.webp 1x, img/content/webp/photo-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/jpeg/photo-3-desktop.jpg 1x, img/content/jpeg/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/jpeg/photo-3-tablet.jpg 1x, img/content/jpeg/photo-3-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/jpeg/photo-3-mobile.jpg"
+                  srcset="img/content/jpeg/photo-3-mobile@2x.jpg 2x" alt="Дорога по среди деревьев">
+              </picture>
+            </a>
+            <div class="photo__container photo__container--row-2">
+              <div class="photo__box">
+                <h3 class="photo__name">Дорога на север</h3>
+                <p class="photo__author">Автор фото: Петр</p>
+              </div>
+              <button class="photo__button">96</button>
+            </div>
+          </div>
+        </li>
+        <li class="photo__item">
+          <div class="photo__content">
+            <a class="photo__container photo__container--row-1" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/content/webp/photo-4-desktop.webp 1x, img/content/webp/photo-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/webp/photo-4-tablet.webp 1x, img/content/webp/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/webp/photo-4-mobile.webp 1x, img/content/webp/photo-4-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/jpeg/photo-4-desktop.jpg 1x, img/content/jpeg/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/jpeg/photo-4-tablet.jpg 1x, img/content/jpeg/photo-4-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/jpeg/photo-4-mobile.jpg"
+                  srcset="img/content/jpeg/photo-4-mobile@2x.jpg 2x" alt="Каменный мост на фоне леса и скал">
+              </picture>
+            </a>
+            <div class="photo__container photo__container--row-2">
+              <div class="photo__box">
+                <h3 class="photo__name">Мост дьявола</h3>
+                <p class="photo__author">Автор фото: Антон</p>
+              </div>
+              <button class="photo__button">254</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="visually-hidden">Видео</h2>
+      <p class="video__text video__text--large">Все еще сомневаетесь?</p>
+      <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!
+      </p>
+      <div class="video__container">
+        <video class="video__content" poster="img/video-mobile.jpg">
+        </video>
+        <div class="video__controller">
+          <button class="video__button"></button>
+          <div class="video__scroll">
+            <div class="video__indicator">
+              <div class="video__toggle"></div>
+            </div>
+          </div>
+          <button class="video__button"></button>
+          <button class="video__button video__button--fullscreen"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <a class="main-footer__tag" lang="en">#visitsedona</a>
+    <ul class="main-footer__social social">
+      <li class="social__item"></li>
+      <li class="social__item"></li>
+      <li class="social__item"></li>
+    </ul>
+    <p class="main-footer__developer">Разработано <a class="main-footer__link"
+        href="https://htmlacademy.ru/intensive/adaptive"><img class="main-footer__logo"
+          src="https://via.placeholder.com/27x34" alt="Логотип организации HTML Academy"></a></p>
+  </footer>
 
 </body>
 

@@ -1,18 +1,75 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  background-color: $white;
 }
 
-.main-header__box {
+.main-header__promo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 158px;
+  width: 100%;
+  padding: 5px 10px 0 10px;
+  box-sizing: border-box;
+  background-color: rgba(61, 132, 172, 1);
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
   overflow: hidden;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background: url("../img/arrows.svg") no-repeat;
+    width: 1200px;
+    height: 57px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 901px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-desktop.jpg");
+    min-height: 290px;
+    padding: 0 10px 14px 10px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  &--index {
+    min-height: 389px;
+    background-position: 50% 0;
+
+    @media (min-width: $tablet-width) {
+      min-height: 518px;
+    }
+  }
 }
 
-.main-header__image {
-  display: block;
-  // Скрывает картинку равномерно со всех сторон
-  transform: translateX(calc((100% - 100vw) / 2 * (-1)));
+.main-header__text {
+  width: 229px;
+  height: 39px;
 
-  @media (min-width: $desktop-width) {
-    transform: translateX(calc((100% - 100vw) / 2 * (-1) - 15px));
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 77.5px;
+  }
+
+  &--index {
+    min-width: 282px;
+    min-height: 214px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 461px;
+      min-height: 350px;
+    }
   }
 }

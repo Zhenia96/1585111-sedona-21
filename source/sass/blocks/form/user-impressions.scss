@@ -1,0 +1,76 @@
+.user-impressions__field {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  @media (max-width: $mobile-only-width) {
+    margin: 0 20px;
+  }
+}
+
+.user-impressions__legend {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+
+
+  @include text(18px, 26px, $black, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 60.5px;
+   }
+}
+
+.user-impressions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-impressions__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-impressions__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+  min-height: 48px;
+
+  @include text(18px, 26px, $black, 700);
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: rgba(242, 242, 242, 1);
+    margin: 0 41px 0 22px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px rgba(242, 242, 242, 1);
+    order: -2;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    box-shadow: 0 0 0 20px rgba(229, 229, 229, 1);
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active::after {
+    box-shadow: 0 0 0 20px rgba(213, 213, 213, 1);
+    background-color: rgba(213, 213, 213, 1);
+  }
+
+  .user-impressions__button:checked + &::after {
+    background-color: rgba(51, 51, 51, 1);
+  }
+
+  .user-impressions__button:active:checked + &::after {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+}

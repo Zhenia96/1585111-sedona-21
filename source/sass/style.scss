@@ -2,14 +2,33 @@
 @import "variables.scss";
 @import "mixin.scss";
 //common blocks
+@import "blocks/page.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/site-menu.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/main-header.scss";
 @import "blocks/social.scss";
+@import "blocks/container.scss";
 @import "blocks/main-footer.scss";
+@import "blocks/main-title.scss";
+@import "blocks/button.scss";
+@import "blocks/logo.scss";
 //index
-@import "blocks/index/main-title.scss";
+@import "blocks/index/index-page.scss";
 @import "blocks/index/conditions.scss";
 @import "blocks/index/reasons.scss";
 @import "blocks/index/search.scss";
+//catalog
+@import "blocks/catalog/catalog-page.scss";
+@import "blocks/catalog/photo.scss";
+@import "blocks/catalog/video.scss";
+//form
+@import "blocks/form/user-name.scss";
+@import "blocks/form/user-contacts.scss";
+@import "blocks/form/user-impressions.scss";
+@import "blocks/form/user-attractions.scss";
+@import "blocks/form/user-feeling.scss";
+@import "blocks/form/review.scss";
+@import "blocks/form/modal-error.scss";
+@import "blocks/form/modal-success.scss";
+

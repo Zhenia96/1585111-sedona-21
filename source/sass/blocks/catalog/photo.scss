@@ -1,0 +1,144 @@
+.photo {
+  margin: 40px 0 0 0;
+}
+
+.photo__text {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px;
+
+  @include text(18px, 24px, rgba(51, 51, 51, 1));
+
+  @media (max-width: $mobile-only-width) {
+    & br {
+      display: none;
+    }
+  }
+}
+
+.photo__list {
+  display: grid;
+  padding: 0;
+  margin: 20px 0 0 0;
+  list-style: none;
+
+  @media (max-width: $mobile-only-width) {
+    border-top: 1px solid rgba(229, 229, 229, 1);
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    margin: 65px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photo__item {
+  @media (max-width: $mobile-only-width) {
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+  }
+
+  &--main {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+}
+
+.photo__content {
+  display: grid;
+
+  @media (max-width: $mobile-only-width) {
+    padding: 22px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.photo__container {
+  &--row-1 {
+    @media (min-width: $desktop-width) {
+      background-color: rgba(0, 0, 0, 0.3);
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+  }
+
+  &--row-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 0 15px 0;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(242, 242, 242, 1);
+      padding: 22px 20px 15px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.photo__picture {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
+  }
+}
+
+.photo__name,
+.photo__author {
+  padding: 0;
+  margin: 0;
+}
+
+.photo__name {
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+
+  @include text(14px, 24px, $black, 700);
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.photo__author {
+  @include text(14px, 24px, rgba(51, 51, 51, 1));
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.photo__button {
+  @include text(14px, 24px, $black, 700);
+}
+

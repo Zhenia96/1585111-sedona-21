@@ -1,0 +1,85 @@
+.user-name__field {
+  padding: 0 0 25px 0;
+  margin: 0;
+  border: none;
+
+  @media (max-width: $mobile-only-width) {
+    margin: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 58px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 81px;
+  }
+}
+
+.user-name__legend {
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @include text(18px, 26px, $black, 700);
+
+  @media (min-width: $tablet-width) {
+   text-align: left;
+   font-size: 21px;
+   margin-bottom: 54.5px;
+  }
+}
+
+.user-name__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-name__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+
+.user-name__label {
+  text-transform: uppercase;
+  margin: 0 13px 0 0;
+
+  @include text(14px, 26px, rgba(51, 51, 51, 1));
+
+  & sup {
+    vertical-align: top;
+    font-size: inherit;
+  }
+}
+
+.user-name__button {
+  background-color: rgba(242, 242, 242, 1);
+  padding: 18px 0 14px 22px;
+  border: none;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    outline: 4px solid rgba(229, 229, 229, 1);
+    outline-offset: -4px;
+    background-color: $white;
+  }
+
+  @include text(18px, 26px, $black, 700);
+
+  &::placeholder {
+    @include text(18px, 26px, $black, 700);
+  }
+}
