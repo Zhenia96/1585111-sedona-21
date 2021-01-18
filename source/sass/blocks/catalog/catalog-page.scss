@@ -9,13 +9,15 @@
 }
 
 .catalog-page__title {
-  margin: 32px 0 0 0;
+  margin: 32px 0 0 2px;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    margin: 65px 0 0 0;
+    font-size: 30px;
+    margin: 63px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 102px 0 0 0;
+    margin: 100px 1px 0 0;
   }
 }

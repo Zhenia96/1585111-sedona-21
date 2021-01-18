@@ -6,22 +6,3 @@
   font-weight: $weight;
   color: $color;
 }
-
-//ВРЕМЕННО
-@mixin outline($color: rgba(255, 0, 0, 1)) {
-  outline: 2px solid $color;
-  outline-offset: -2px;
-}
-
-@mixin box1() {
-  background-color: rgba(51, 51, 51, 0.234);
-  outline: 1px solid rgba(213, 16, 16, 0.234);
-  outline-offset: -1px;
-}
-
-@mixin box2() {
-  background-color: rgba(59, 157, 108, 0.234);
-  outline: 1px solid rgba(35, 32, 167, 0.234);
-  outline-offset: -1px;
-}
-

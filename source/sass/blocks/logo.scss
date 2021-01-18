@@ -1,42 +1,9 @@
 .logo {
   width: 102px;
-  height: 100px;
+  height: 84px;
 
   @media (min-width: $desktop-width) {
     width: 187px;
-  }
-}
-
-.logo__clouds {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.logo__triangle {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.logo__background {
-  &--mobile {
-    transform: translateX(42.5px);
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
+    height: 97px;
   }
 }

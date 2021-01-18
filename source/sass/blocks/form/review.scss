@@ -1,20 +1,30 @@
 .review {
-  padding: 36px 0 48px 0;
+  padding: 36px 0 0 0;
+  margin: 0 0 66px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 61px 0;
+    padding: 62px 0 61px 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 114px 0 66px 0;
+    padding: 112px 0 62px 0;
   }
 }
 
 .review__title {
-  margin: 0 0 41px 0;
+  margin: 0 0 28px 0;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 .review__text {
+  padding: 0;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
 
@@ -30,18 +40,18 @@
 .review__list {
   display: grid;
   column-gap: 1px;
-  margin: 16px 0 0 0;
+  margin: 17px 0 0 0;
   padding: 0;
   list-style: none;
   background-color: rgba(219, 219, 219, 1);
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 50% 50%;
-    margin: 70px 0 0 0;
+    margin: 87px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px 0 0 0;
+    margin: 59px 0 0 0;
   }
 }
 
@@ -53,11 +63,6 @@
 
   @media (max-width: $mobile-only-width) {
     border-top: 1px solid rgba(229, 229, 229, 1);
-    padding-top: 20px;
-
-    &:nth-of-type(4) {
-      padding-top: 15px;
-    }
   }
 
   &:nth-of-type(2),
@@ -80,12 +85,11 @@
   justify-content: space-between;
 
   @media (max-width: $mobile-only-width) {
-    margin: 0 20px;
-    margin-top: 51px;
+    margin: 47px 21px 0 19px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 58px;
+    margin: 54px 0 0 0;
   }
 }
 
@@ -94,7 +98,12 @@
   min-height: 58px;
 
   @media (min-width: $tablet-width) {
+    padding: 18.5px 19px 13.5px 10px;
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18.5px 10px 13.5px 10px;
   }
 }
 
@@ -111,6 +120,8 @@
   @media (max-width: $mobile-only-width) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 0 0;
+  }
 }
-
-

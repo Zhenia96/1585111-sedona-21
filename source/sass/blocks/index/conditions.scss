@@ -1,7 +1,7 @@
 .conditions {
   display: flex;
   flex-direction: column;
-  padding: 0 0 34px 0;
+  padding: 0 0 35px 0;
   margin: 0;
   list-style: none;
 
@@ -16,35 +16,22 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0 10px;
+  padding: 0 20px;
   box-sizing: border-box;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 0;
-  }
 
   & br {
     display: none;
   }
 
   @media (max-width: $mobile-only-width) {
-    margin-top: 26px;
-    padding-left: 51px;
+    margin: 26px 0 0 0;
+    padding: 0 20px 0 69px;
   }
 
   @media (min-width: $tablet-width) {
     text-align: center;
     width: 33.33%;
-    padding: 0 29px;
-
-    &::before {
-      position: static;
-      align-self: center;
-      margin: 0px 0 26px 0;
-    }
+    padding: 0 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,40 +39,14 @@
   }
 
   &--house {
-    &::before {
-      width: 39px;
-      height: 37px;
-      background: url("../img/icon-house.svg") no-repeat;
-      background-size: contain;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::before {
-        width: 80px;
-        height: 80px;
-        background-position: 50% 100%;
-        background-size: 75px 72px;
-      }
+    @media (max-width: $mobile-only-width) {
+      margin: 35px 0 0 0;
     }
   }
 
   &--souvenirs {
-    order: 2;
-
-    &::before {
-      width: 32px;
-      height: 38px;
-      background: url("../img/icon-gift.svg") no-repeat;
-      background-size: contain;
-    }
-
     @media (min-width: $tablet-width) {
-      &::before {
-        width: 80px;
-        height: 80px;
-        background-position: 50% 100%;
-        background-size: 64px 75px;
-      }
+      order: 2;
     }
 
     @media (min-width: $desktop-width) {
@@ -96,20 +57,50 @@
   }
 
   &--food {
-    &::before {
-      width: 40px;
-      height: 35px;
-      background: url("../img/icon-burger.svg") no-repeat;
-      background-size: contain;
+    @media (min-width: $tablet-width) {
+      padding: 0 50px;
     }
+  }
+}
+
+.conditions__icon {
+  position: absolute;
+  top: -10px;
+  left: 21px;
+  width: 39px;
+  height: 37px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    align-self: center;
+    margin: 0 0 26px 0;
+    width: 75px;
+    height: 72px;
+  }
+
+  &--gift {
+    top: -11px;
+    left: 25px;
+    width: 32px;
+    height: 38px;
 
     @media (min-width: $tablet-width) {
-      &::before {
-        width: 80px;
-        height: 80px;
-        background-position: 50% 100%;
-        background-size: 76px 68px;
-      }
+      margin: -3px 1px 27px 0;
+      width: 64px;
+      height: 75px;
+    }
+  }
+
+  &--burger {
+    top: -5px;
+    left: 18px;
+    width: 40px;
+    height: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin: 3px 0 27px 0;
+      width: 76px;
+      height: 68px;
     }
   }
 }
@@ -122,14 +113,18 @@
 .conditions__subtitle {
   @include text(18px, 26px, $black, 700);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .conditions__text {
-  margin: 28px 0 0 0;
+  margin: 16px 0 0 0;
 
   @include text(14px, 21px, $black);
 
   @media (min-width: $tablet-width) {
-    margin: 34px 0 0 0;
+    margin: 23px 0 0 0;
   }
 }

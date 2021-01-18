@@ -44,6 +44,10 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    min-height: 301px;
+  }
+
   &--index {
     min-height: 389px;
     background-position: 50% 0;
@@ -52,20 +56,35 @@
       min-height: 518px;
     }
   }
+
+  &--fix-position {
+    @media (max-width: $mobile-only-width) {
+      background-position-x: 50.2%;
+    }
+  }
 }
 
 .main-header__text {
   width: 229px;
   height: 39px;
+  margin: 0 2px 17px 0;
 
   @media (min-width: $tablet-width) {
     width: 457px;
     height: 77.5px;
+    margin: 0 0 6px 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    height: 80px;
+    margin: 0 2px 2px 0;
   }
 
   &--index {
     min-width: 282px;
     min-height: 214px;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       min-width: 461px;

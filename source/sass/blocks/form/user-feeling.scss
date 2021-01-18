@@ -1,7 +1,13 @@
 .user-feeling {
+  padding: 20px 0 0 0;
+
   @media (min-width: $tablet-width) {
-    padding-top: 73.5px;
-   }
+    padding: 35px 0 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 0 0;
+  }
 }
 
 .user-feeling__field {
@@ -10,7 +16,7 @@
   border: none;
 
   @media (max-width: $mobile-only-width) {
-    margin: 0 20px;
+    margin: 0 22px 0 19px;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,23 +26,29 @@
 
 .user-feeling__legend {
   text-transform: uppercase;
-  margin-bottom: 15px;
+  padding: 0 0 0 2px;
+  margin: 0 0 15px 0;
   width: 100%;
   text-align: center;
-
 
   @include text(18px, 26px, $black, 700);
 
   @media (min-width: $tablet-width) {
-   font-size: 21px;
-   margin-bottom: 54.5px;
-   width: 400px;
+    font-size: 21px;
+    padding: 4px 2px 0 0;
+    margin: 0 0 55px 0;
+    width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 2px 2px 0 0;
   }
 }
 
 .user-feeling__button {
   background-color: rgba(242, 242, 242, 1);
-  padding: 18px 22px 14px 22px;
+  padding: 13px 22px 14px 21px;
+  margin: 0;
   width: 100%;
   min-height: 160px;
   border: none;
@@ -46,5 +58,9 @@
 
   &::placeholder {
     @include text(18px, 26px, $black, 700);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 22px 14px 21px;
   }
 }

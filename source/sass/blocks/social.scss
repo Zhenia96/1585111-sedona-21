@@ -7,8 +7,26 @@
 }
 
 .social__item {
-  background-color: rgba(129, 179, 210, 1);
   width: 46px;
   min-height: 48px;
   margin: 0 3px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: $white;
+  background-color: rgba(129, 179, 210, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(102, 158, 192, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(84, 150, 189, 1);
+  }
 }

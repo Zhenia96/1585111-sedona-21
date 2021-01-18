@@ -1,3 +1,11 @@
+.user-attractions {
+  padding: 15px 0 0 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 0 0 0;
+  }
+}
+
 .user-attractions__field {
   padding: 0;
   margin: 0;
@@ -14,15 +22,21 @@
 
 .user-attractions__legend {
   text-transform: uppercase;
-  margin-bottom: 25px;
-  width: 400px;
+  padding: 0;
+  margin: 0 0 21px 0;
   text-align: center;
 
   @include text(18px, 26px, $black, 700);
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin-bottom: 47.5px;
+    margin: 0 0 44.5px 0;
+    width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 1px 0 0;
+    margin: 0 0 43.5px 0;
   }
 }
 
@@ -34,33 +48,33 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   }
+  }
 }
 
 .user-attractions__item {
   margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
-    margin-left: 31px;
+    margin: 0 0 32px 31px;
 
     &:nth-of-type(odd) {
-      margin-left: 95px;
+      margin: 0 0 32px 95px;
     }
-   }
+  }
 
   @media (min-width: $desktop-width) {
     &:first-of-type {
-      margin-left: 0;
+      margin: 0 0 32px 0;
     }
 
     &:not(:first-of-type) {
-      margin-left: 38px;
+      margin: 0 0 32px 38px;
     }
   }
 }
@@ -71,17 +85,6 @@
 
   @include text(18px, 26px, $black, 700);
 
-  &::after {
-    content: "";
-    width: 51px;
-    height: 51px;
-    background-color: rgba(242, 242, 242, 1);
-    margin: 0 25px 0 0;
-    border-radius: 5px;
-    order: -2;
-
-  }
-
   &:hover::after,
   &:focus::after {
     background-color: rgba(229, 229, 229, 1);
@@ -89,5 +92,45 @@
 
   &:active::after {
     background-color: rgba(213, 213, 213, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 3px 0 0;
+  }
+}
+
+.user-attractions__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(242, 242, 242, 1);
+  margin: 0 23px 0 0;
+  border-radius: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 25px 0 0;
+  }
+
+  .user-attractions__label:hover &,
+  .user-attractions__label:focus & {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  .user-attractions__label:focus & {
+    background-color: rgba(213, 213, 213, 1);
+  }
+}
+
+.user-attractions__tick {
+  display: none;
+
+  .user-attractions__button:checked + .user-attractions__label & {
+    display: block;
+  }
+
+  .user-attractions__button:checked + .user-attractions__label:active & {
+    opacity: 0.3;
   }
 }

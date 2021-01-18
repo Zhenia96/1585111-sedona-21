@@ -1,25 +1,34 @@
 .photo {
-  margin: 40px 0 0 0;
+  margin: 28px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 33px 0 0 0;
+  }
 }
 
 .photo__text {
   text-align: center;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0 18px 0 22px;
+  margin: 0;
 
-  @include text(18px, 24px, rgba(51, 51, 51, 1));
+  @include text(14px, 24px, rgba(51, 51, 51, 1));
 
   @media (max-width: $mobile-only-width) {
     & br {
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
 }
 
 .photo__list {
   display: grid;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 31px 0 0 0;
   list-style: none;
 
   @media (max-width: $mobile-only-width) {
@@ -28,11 +37,12 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    margin: 65px 0 0 0;
+    margin: 78px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 80px 0 0 0;
   }
 }
 
@@ -51,7 +61,7 @@
   display: grid;
 
   @media (max-width: $mobile-only-width) {
-    padding: 22px 20px;
+    padding: 22px 20px 17px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,14 +83,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 22px 0 15px 0;
+    padding: 10px 0 0 0;
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       background-color: rgba(242, 242, 242, 1);
-      padding: 22px 20px 15px 20px;
+      padding: 15px 20px 16px 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -121,7 +131,7 @@
 
 .photo__name {
   text-transform: uppercase;
-  margin: 0 0 5px 0;
+  margin: 0 0 1px 0;
 
   @include text(14px, 24px, $black, 700);
 
@@ -132,13 +142,63 @@
 
 .photo__author {
   @include text(14px, 24px, rgba(51, 51, 51, 1));
+  margin: 0 0 12px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     color: $white;
   }
 }
 
-.photo__button {
+.photo__like {
+  display: flex;
+  align-items: center;
+
   @include text(14px, 24px, $black, 700);
+
+  @media (min-width: $tablet-width) {
+    margin: 2px 9px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+
+  &--position-1 {
+    @media (min-width: $tablet-width) {
+      margin: 3px 1px 0 0;
+    }
+  }
+
+  &--position-2 {
+    @media (min-width: $tablet-width) {
+      margin: 2px 16px 0 0;
+    }
+  }
 }
 
+.photo__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 1px 0;
+  }
+}
+
+.photo__icon {
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0 14px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 9px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}

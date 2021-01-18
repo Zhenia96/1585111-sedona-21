@@ -3,9 +3,11 @@
   flex-direction: column;
   background-color: white;
   padding-top: 33px;
+  margin: 0 0 28px 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
+    padding-top: 56px;
+    margin: 0;
   }
 }
 
@@ -15,13 +17,16 @@
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin: 0 auto;
-    margin-bottom: 58px;
+    margin: 0 auto 58px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 64px auto;
   }
 }
 
 .search__text {
-  margin: 0 0 34px 0;
+  margin: 0 0 21px 0;
   text-transform: uppercase;
 
   @include text(14px, 24px, $black, 400);
@@ -31,6 +36,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 33px 0;
+
     & br {
       display: inline-block;
     }
@@ -50,6 +57,15 @@
   text-decoration: none;
   width: 100%;
   padding: 14.5px 10px 17.5px 10px;
+  margin: 28px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 39px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 44px 0 0 0;
+  }
 }
 
 .search__map {
@@ -60,14 +76,14 @@
   background-position: 50% 50%;
   background-size: cover;
 
-  @media(min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet.jpg");
 
-    @media(min-resolution: 2dppx) {
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/map-tablet@2x.jpg");
     }
   }
@@ -75,7 +91,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/map-desktop.jpg");
 
-    @media(min-resolution: 2dppx) {
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/map-desktop@2x.jpg");
     }
   }
