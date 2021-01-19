@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -49,17 +50,17 @@
             <a class="photo__container photo__container--row-1" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/content/webp/photo-1-desktop.webp 1x, img/content/webp/photo-1-desktop@2x.webp 2x">
+                  srcset="img/content/photo-1-desktop.webp 1x, img/content/photo-1-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/webp/photo-1-tablet.webp 1x, img/content/webp/photo-1-tablet@2x.webp 2x">
+                  srcset="img/content/photo-1-tablet.webp 1x, img/content/photo-1-tablet@2x.webp 2x">
                 <source type="image/webp"
-                  srcset="img/content/webp/photo-1-mobile.webp 1x, img/content/webp/photo-1-mobile@2x.webp 2x">
+                  srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="img/content/jpeg/photo-1-desktop.jpg 1x, img/content/jpeg/photo-1-desktop@2x.jpg 2x">
+                  srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/content/jpeg/photo-1-tablet.jpg 1x, img/content/jpeg/photo-1-tablet@2x.jpg 2x">
-                <img class="photo__picture photo__picture--main" src="img/content/jpeg/photo-1-mobile.jpg"
-                  srcset="img/content/jpeg/photo-1-mobile@2x.jpg 2x" alt="Дорога на фоне заката">
+                  srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
+                <img class="photo__picture photo__picture--main" src="img/content/photo-1-mobile.jpg"
+                  srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Дорога на фоне заката">
               </picture>
             </a>
             <div class="photo__container photo__container--row-2">
@@ -83,17 +84,17 @@
             <a class="photo__container photo__container--row-1" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/content/webp/photo-2-desktop.webp 1x, img/content/webp/photo-2-desktop@2x.webp 2x">
+                  srcset="img/content/photo-2-desktop.webp 1x, img/content/photo-2-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/webp/photo-2-tablet.webp 1x, img/content/webp/photo-2-tablet@2x.webp 2x">
+                  srcset="img/content/photo-2-tablet.webp 1x, img/content/photo-2-tablet@2x.webp 2x">
                 <source type="image/webp"
-                  srcset="img/content/webp/photo-2-mobile.webp 1x, img/content/webp/photo-2-mobile@2x.webp 2x">
+                  srcset="img/content/photo-2-mobile.webp 1x, img/content/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="img/content/jpeg/photo-2-desktop.jpg 1x, img/content/jpeg/photo-2-desktop@2x.jpg 2x">
+                  srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/content/jpeg/photo-2-tablet.jpg 1x, img/content/jpeg/photo-2-tablet@2x.jpg 2x">
-                <img class="photo__picture" src="img/content/jpeg/photo-2-mobile.jpg"
-                  srcset="img/content/jpeg/photo-2-mobile@2x.jpg 2x" alt="Кактус с цветками на фоне скал">
+                  srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/photo-2-mobile.jpg"
+                  srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Кактус с цветками на фоне скал">
               </picture>
             </a>
             <div class="photo__container photo__container--row-2">
@@ -117,17 +118,17 @@
             <a class="photo__container photo__container--row-1" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/content/webp/photo-3-desktop.webp 1x, img/content/webp/photo-3-desktop@2x.webp 2x">
+                  srcset="img/content/photo-3-desktop.webp 1x, img/content/photo-3-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/webp/photo-3-tablet.webp 1x, img/content/webp/photo-3-tablet@2x.webp 2x">
+                  srcset="img/content/photo-3-tablet.webp 1x, img/content/photo-3-tablet@2x.webp 2x">
                 <source type="image/webp"
-                  srcset="img/content/webp/photo-3-mobile.webp 1x, img/content/webp/photo-3-mobile@2x.webp 2x">
+                  srcset="img/content/photo-3-mobile.webp 1x, img/content/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="img/content/jpeg/photo-3-desktop.jpg 1x, img/content/jpeg/photo-3-desktop@2x.jpg 2x">
+                  srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/content/jpeg/photo-3-tablet.jpg 1x, img/content/jpeg/photo-3-tablet@2x.jpg 2x">
-                <img class="photo__picture" src="img/content/jpeg/photo-3-mobile.jpg"
-                  srcset="img/content/jpeg/photo-3-mobile@2x.jpg 2x" alt="Дорога по среди деревьев">
+                  srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/photo-3-mobile.jpg"
+                  srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Дорога по среди деревьев">
               </picture>
             </a>
             <div class="photo__container photo__container--row-2">
@@ -151,17 +152,17 @@
             <a class="photo__container photo__container--row-1" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/content/webp/photo-4-desktop.webp 1x, img/content/webp/photo-4-desktop@2x.webp 2x">
+                  srcset="img/content/photo-4-desktop.webp 1x, img/content/photo-4-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/webp/photo-4-tablet.webp 1x, img/content/webp/photo-4-tablet@2x.webp 2x">
+                  srcset="img/content/photo-4-tablet.webp 1x, img/content/photo-4-tablet@2x.webp 2x">
                 <source type="image/webp"
-                  srcset="img/content/webp/photo-4-mobile.webp 1x, img/content/webp/photo-4-mobile@2x.webp 2x">
+                  srcset="img/content/photo-4-mobile.webp 1x, img/content/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="img/content/jpeg/photo-4-desktop.jpg 1x, img/content/jpeg/photo-4-desktop@2x.jpg 2x">
+                  srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/content/jpeg/photo-4-tablet.jpg 1x, img/content/jpeg/photo-4-tablet@2x.jpg 2x">
-                <img class="photo__picture" src="img/content/jpeg/photo-4-mobile.jpg"
-                  srcset="img/content/jpeg/photo-4-mobile@2x.jpg 2x" alt="Каменный мост на фоне леса и скал">
+                  srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/photo-4-mobile.jpg"
+                  srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Каменный мост на фоне леса и скал">
               </picture>
             </a>
             <div class="photo__container photo__container--row-2">
@@ -251,7 +252,7 @@
     </p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

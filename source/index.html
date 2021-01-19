@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -52,13 +53,12 @@
           <div class="reasons__box reasons__box--column-1">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/content/webp/photo-city-desktop.webp 1x, img/content/webp/photo-city-desktop@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/content/webp/photo-city.webp 1x, img/content/webp/photo-city@2x.webp 2x">
+                srcset="img/content/photo-city-desktop.webp 1x, img/content/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-city.webp 1x, img/content/photo-city@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="img/content/jpeg/photo-city-desktop.jpg 1x, img/content/jpeg/photo-city-desktop@2x.jpg 2x">
-              <img class="reasons__picture" src="img/content/jpeg/photo-city.jpg"
-                srcset="img/content/jpeg/photo-city@2x.jpg 2x" alt="Двухэтажные домики на фоне природы">
+                srcset="img/content/photo-city-desktop.jpg 1x, img/content/photo-city-desktop@2x.jpg 2x">
+              <img class="reasons__picture" src="img/content/photo-city.jpg" srcset="img/content/photo-city@2x.jpg 2x"
+                alt="Двухэтажные домики на фоне природы">
             </picture>
           </div>
           <ul class="reasons__conditions reasons__conditions--row conditions">
@@ -95,13 +95,12 @@
           <div class="reasons__box reasons__box--column-2">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/content/webp/photo-bridge-desktop.webp 1x, img/content/webp/photo-bridge-desktop@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/content/webp/photo-bridge.webp 1x, img/content/webp/photo-bridge@2x.webp 2x">
+                srcset="img/content/photo-bridge-desktop.webp 1x, img/content/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-bridge.webp 1x, img/content/photo-bridge@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="img/content/jpeg/photo-bridge-desktop.jpg 1x, img/content/jpeg/photo-bridge-desktop@2x.jpg 2x">
-              <img class="reasons__picture" src="img/content/jpeg/photo-bridge.jpg"
-                srcset="img/content/jpeg/photo-bridge@2x.jpg 2x" alt="Каменный мост на фоне леса и скал">
+                srcset="img/content/photo-bridge-desktop.jpg 1x, img/content/photo-bridge-desktop@2x.jpg 2x">
+              <img class="reasons__picture" src="img/content/photo-bridge.jpg"
+                srcset="img/content/photo-bridge@2x.jpg 2x" alt="Каменный мост на фоне леса и скал">
             </picture>
           </div>
         </li>
@@ -180,7 +179,7 @@
     </p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

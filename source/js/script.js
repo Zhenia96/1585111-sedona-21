@@ -1,5 +1,5 @@
-let button = document.querySelector('.main-navigation__button');
-let menu = document.querySelector('.main-navigation__list');
+var button = document.querySelector('.main-navigation__button');
+var menu = document.querySelector('.main-navigation__list');
 
 button.classList.remove('main-navigation__button--no-js');
 menu.classList.remove('main-navigation__list--no-js');
