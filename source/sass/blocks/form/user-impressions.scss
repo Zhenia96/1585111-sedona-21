@@ -88,8 +88,7 @@
     }
   }
 
-  &:hover::after,
-  &:focus::after {
+  &:hover::after {
     box-shadow: 0 0 0 18px rgba(229, 229, 229, 1);
     background-color: rgba(229, 229, 229, 1);
   }
@@ -97,6 +96,11 @@
   &:active::after {
     box-shadow: 0 0 0 18px rgba(213, 213, 213, 1);
     background-color: rgba(213, 213, 213, 1);
+  }
+
+  .user-impressions__button:focus + &::after {
+    box-shadow: 0 0 0 18px rgba(229, 229, 229, 1);
+    background-color: rgba(229, 229, 229, 1);
   }
 
   .user-impressions__button:checked + &::after {

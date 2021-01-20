@@ -85,15 +85,6 @@
 
   @include text(18px, 26px, $black, 700);
 
-  &:hover::after,
-  &:focus::after {
-    background-color: rgba(229, 229, 229, 1);
-  }
-
-  &:active::after {
-    background-color: rgba(213, 213, 213, 1);
-  }
-
   @media (min-width: $desktop-width) {
     margin: 0 3px 0 0;
   }
@@ -113,13 +104,16 @@
     margin: 0 25px 0 0;
   }
 
-  .user-attractions__label:hover &,
-  .user-attractions__label:focus & {
+  .user-attractions__label:hover & {
     background-color: rgba(229, 229, 229, 1);
   }
 
-  .user-attractions__label:focus & {
+  .user-attractions__label:active & {
     background-color: rgba(213, 213, 213, 1);
+  }
+
+  .user-attractions__button:focus + .user-attractions__label & {
+    background-color: rgba(229, 229, 229, 1);
   }
 }
 
