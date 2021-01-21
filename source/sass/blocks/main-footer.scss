@@ -22,25 +22,38 @@
   text-transform: uppercase;
 
   @include text(21px, 26px, $black, 700);
+
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+  }
 }
 
 .main-footer__social {
+  display: flex;
+  justify-content: center;
+
   @media (max-width: $mobile-only-width) {
-    margin: 34px 0 33px 0;
+    margin: 34px 0 29px 2px;
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 8px 0 0;
+    margin: 0 0 0 2px;
+    width: 33.3%;
   }
 }
 
 .main-footer__developer {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   text-transform: uppercase;
 
   @include text(14px, 26px, $black, 400);
+
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+  }
 }
 
 .main-footer__link {

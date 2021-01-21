@@ -17,15 +17,16 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  overflow: hidden;
 
   &::before {
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     content: "";
-    background: url("../img/arrows.svg") no-repeat;
-    width: 1200px;
-    height: 57px;
+    background-image: url("../img/arrows.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    width: 100%;
+    height: 59px;
   }
 
   @media (min-resolution: 2dppx) {

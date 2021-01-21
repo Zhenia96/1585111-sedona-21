@@ -2,7 +2,18 @@
   padding: 20px 0 0 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding: 0;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 1px;
+      height: calc(100% - 20px);
+      background-color: rgba(219, 219, 219, 1);
+    }
   }
 }
 
